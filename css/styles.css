@@ -93,7 +93,8 @@ p {
 }
 .contacts{
 	display: flex;
-  align-items: center;
+  	align-items: center;
+  	margin-left: auto;
 }
 
 .contact-email,
@@ -109,10 +110,6 @@ p {
 .header-item:not(:last-child) {
 	margin-right: 40px;
   }
-
-.contact-email{
-	margin-left: 332px;
-}
 
 .contact-email:hover,
 .contact-email:active,
@@ -140,27 +137,33 @@ p {
 	padding-bottom: 120px;
 }
 
+.portfolio-section{
+	padding-top: 96px;
+}
+
 /* hero section */
 .hero-section {
 	background-color: var(--base-color);
-	height: 600px;
 	left: 0px;
 	top: 72px;
-	text-align: center;
+	padding-top: 180px;
+	padding-bottom: 180px;
 }
 
 .hero-header {
-	font-style: normal;
-	font-weight: 700;
-	font-size: 56px;
-	line-height: calc(60/56);
-	text-align: center;
-	letter-spacing: 0.02em;
-	color: var(--primary-white);
 	max-width: 496px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 48px;
+	text-align: center;
+	
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: calc(60/56);
+	letter-spacing: 0.02em;
+	color: var(--primary-white);  
+
 }
 
 .header-button:hover,
@@ -168,26 +171,30 @@ p {
 	color: var(--primary-white);
 	background-color: var(--pressed-state);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-
 }
 
 .header-button {
-	font-family: inherit;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: calc(16/24);
-	letter-spacing: 0.04em;
-	color: var(--primary-white);
-	text-align: center;
-	background-color: var(--primary-link-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
 	padding: 16px 32px;
+
+  	text-align: center;
+  	font-family: inherit;
+  	font-weight: 500;
+  	font-size: 16px;
+  	line-height: calc(16/24);
+  	letter-spacing: 0.04em;
+  	color: var(--primary-white);
+	background-color: var(--primary-link-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
 }
 
 
 /* features */
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .feature-container{
 	display: flex;
 }
@@ -204,7 +211,15 @@ p {
 }
 
 .visually-hidden {
-	visibility: hidden;
+	height: 1px;
+  	margin: -1px;
+  	border: 0;
+  	padding: 0;
+  	white-space: nowrap;
+  	clip-path: inset(100%);
+  	clip: rect(0 0 0 0);
+  	overflow: hidden;
+  	width: 1px;
 }
 .feature-list{
 	display: flex;
@@ -220,8 +235,6 @@ p {
 }
 
 .feature-list .description {
-	font-weight: 400;
-	font-size: 16px;
 	line-height: calc(24/16);
 	letter-spacing: 0.02em;
 	color: var(--text-color);
@@ -369,7 +382,14 @@ margin-bottom: 72px;
 	border-radius: 4px;
 }
 
+.portfolio-list{
+	display: flex;
+  	flex-wrap: wrap;
+  	gap: 24px;
+}
+
 .portfolio-list .title{
+	margin-top: 32px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
@@ -378,6 +398,7 @@ margin-bottom: 72px;
 }
 
 .portfolio-list .text{
+	margin-top: 8px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
@@ -385,30 +406,25 @@ margin-bottom: 72px;
 	color: var(--text-color);
 }
 
-.portfolio-list{
-	display: flex;
-  	flex-wrap: wrap;
-  	gap: 24px;
-}
 
 .portfolio-item{
 	width: 360px;
-	border: 1px solid var(--accent-color);
-	border-radius: 0px 0px 4px 4px;
-	
+	display: flex;
+  	flex-wrap: wrap;
 	margin-bottom: 48px;
+	
+
+} 
+
+.portfolio-item:nth-last-child(-n + 3) {
+    padding-bottom: 120px;
 }
 
-.portfolio-img{
-	margin-bottom: 32px;
-}
 
-.portfolio-item .title{
+.card{
 	padding-left: 16px;
-	padding-bottom: 16px;
-}
-
-.portfolio-item .text{
-	padding-left: 16px;
-	padding-bottom:36px;
+	padding-bottom: 32px;
+	width: 360px;
+	margin-bottom: 48px;
+	border: 1px solid var(--accent-color);
 }
