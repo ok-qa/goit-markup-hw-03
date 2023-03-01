@@ -145,8 +145,10 @@ p {
 .hero-section {
 	padding-top: 180px;
 	padding-bottom: 180px;
-
 	background-color: var(--base-color);
+	left: 0px;
+	top: 72px;
+	text-align: center;
 }
 
 .hero-header {
