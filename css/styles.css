@@ -143,11 +143,10 @@ p {
 
 /* hero section */
 .hero-section {
-	background-color: var(--base-color);
-	left: 0px;
-	top: 72px;
 	padding-top: 180px;
 	padding-bottom: 180px;
+
+	background-color: var(--base-color);
 }
 
 .hero-header {
@@ -156,7 +155,7 @@ p {
 	margin-right: auto;
 	margin-bottom: 48px;
 	text-align: center;
-	
+
 	font-style: normal;
 	font-weight: 700;
 	font-size: 56px;
