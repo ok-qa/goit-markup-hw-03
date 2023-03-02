@@ -249,6 +249,9 @@ img{
 }
 
 /* What are we doing / About us */
+.about-section{
+	padding-top: 0;
+}
 .section-title{
 	font-weight: 700;
     font-size: 36px;
@@ -324,26 +327,29 @@ border-radius: 0px 0px 4px 4px;
 /* Footer */
 
 .footer{
-	color: var(--primary-white);
-	background-color: var(--base-color);
 	padding-top: 100px;
 	padding-bottom: 100px;
-
+	color: var(--primary-white);
+	background-color: var(--base-color);
 }
 
 .logo-footer{
 	color: var(--primary-white);
 	font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  	font-size: 16px;
+  	line-height: 1.5;
+  	letter-spacing: 0.02em;
 }
 
 .footer-text{
 	display: block;
-  width: 264px;
-  margin-top: 16px;
-  color: var(--primary-white);
+  	width: 264px;
+  	margin-top: 16px;
+  	color: var(--primary-white);
+
+  	font-weight: 400;
+	font-size: 16px;
+	line-height: calc(24/16);
 }
 
 /* PORTFOLIO */
@@ -386,11 +392,10 @@ margin-bottom: 72px;
 .portfolio-list{
 	display: flex;
   	flex-wrap: wrap;
-  	gap: 24px;
+  	gap: 48px 24px;
 }
 
 .portfolio-list .title{
-	margin-top: 32px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
@@ -412,7 +417,6 @@ margin-bottom: 72px;
 	width: 360px;
 	display: flex;
   	flex-wrap: wrap;
-	margin-bottom: 48px;
 	
 
 } 
@@ -424,8 +428,10 @@ margin-bottom: 72px;
 
 .card{
 	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 32px;
 	padding-bottom: 32px;
 	width: 360px;
-	margin-bottom: 48px;
+
 	border: 1px solid var(--accent-color);
 }
